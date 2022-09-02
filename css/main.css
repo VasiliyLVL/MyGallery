@@ -53,7 +53,7 @@ img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100vw;
 }
 
 .header {
@@ -126,14 +126,9 @@ img {
   margin-right: auto;
   width: 60%;
   color: var(--primary-header-color);
-  font-size: 60px;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
-}
-@media screen and (max-width: 1199px) {
-  .hero-section__tatle {
-    font-size: 36px;
-  }
 }
 
 :root {
