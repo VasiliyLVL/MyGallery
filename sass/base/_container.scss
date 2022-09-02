@@ -1,0 +1,32 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.header-container {
+  padding-right: 200px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.hero-container {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  width: 1600px;
+  background-color: #999999;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
