@@ -1,0 +1,30 @@
+.events-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.events-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.events-list__wrapper {
+  width: 44vw;
+}
+
+.events-section__title {
+  margin-bottom: 30px;
+  color: var(--primary-header-color);
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.events-list__text {
+  width: 44vw;
+  color: var(--primary-header-color);
+}
