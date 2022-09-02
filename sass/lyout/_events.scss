@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .events-list__img {
+    margin-bottom: 10px;
+  }
+}
+
 .events-list__wrapper {
   width: 44vw;
   @media screen and (max-width: 767px) {
