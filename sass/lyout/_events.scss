@@ -12,14 +12,14 @@
   }
   @media screen and (max-width: 767px) {
     display: block;
-    width: 100vw;
+    width: 90vw;
   }
 }
 
 .events-list__wrapper {
   width: 44vw;
   @media screen and (max-width: 767px) {
-    width: 95vw;
+    width: 100%;
   }
 }
 
@@ -35,6 +35,6 @@
   width: 44vw;
   color: var(--primary-header-color);
   @media screen and (max-width: 767px) {
-    width: 95vw;
+    width: 100%;
   }
 }
