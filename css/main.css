@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: var(--invers-header-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -36,23 +36,12 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .header-container {
-  padding-right: 200px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
@@ -60,12 +49,11 @@ img {
 .hero-container {
   padding-top: 300px;
   padding-bottom: 300px;
-  width: 1600px;
-  background-color: #999999;
+  background-color: var(--invers-header-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg-hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .header {
@@ -77,6 +65,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -86,13 +76,28 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media screen and (max-width: 480px) {
+  .header-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .logo {
-  padding: 5px;
   color: var(--primary-header-color);
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
+}
+
+.nav {
+  margin-right: 15%;
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    margin-right: 0;
+  }
 }
 
 .nav-list {
@@ -119,14 +124,20 @@ img {
 .hero-section__tatle {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: 60%;
   color: var(--primary-header-color);
   font-size: 60px;
   font-weight: 700;
   text-align: center;
 }
+@media screen and (max-width: 1199px) {
+  .hero-section__tatle {
+    font-size: 36px;
+  }
+}
 
 :root {
   --primary-header-color: rgba(255, 255, 255, 0.7);
   --invers-header-color: #252326;
+  --white-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

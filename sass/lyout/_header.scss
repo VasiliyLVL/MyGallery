@@ -6,21 +6,31 @@
 
 .header-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 }
 
 .logo {
-  padding: 5px;
   color: var(--primary-header-color);
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
-  // &:hover {
-  //   color: #91cdff;
+  // @media screen and (max-width: 480px) {
+  //   color: var(--white-color);
   // }
+}
+
+.nav {
+  margin-right: 15%;
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
 }
 
 .nav-list {
@@ -38,4 +48,7 @@
     color: var(--invers-header-color);
     background-color: var(--primary-header-color);
   }
+  // @media screen and (max-width: 480px) {
+  //   color: var(--white-color);
+  // }
 }

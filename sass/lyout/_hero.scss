@@ -1,9 +1,12 @@
 .hero-section__tatle {
   margin-left: auto;
   margin-right: auto;
-  width: 900px;
+  width: calc(60%);
   color: var(--primary-header-color);
   font-size: 60px;
   font-weight: 700;
   text-align: center;
+  @media screen and (max-width: 1199px) {
+    font-size: 36px;
+  }
 }
