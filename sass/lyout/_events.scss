@@ -10,10 +10,17 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 767px) {
+    display: block;
+    width: 100vw;
+  }
 }
 
 .events-list__wrapper {
   width: 44vw;
+  @media screen and (max-width: 767px) {
+    width: 95vw;
+  }
 }
 
 .events-section__title {
@@ -27,4 +34,7 @@
 .events-list__text {
   width: 44vw;
   color: var(--primary-header-color);
+  @media screen and (max-width: 767px) {
+    width: 95vw;
+  }
 }
