@@ -127,6 +127,11 @@ img {
 .logo:hover {
   text-shadow: 1px 1px 2px #000000, 0 0 1em #bbbcbe, 0 0 0.2em #bbbcbe;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #bbbcbe, 0 0 0.2em #bbbcbe;
+  }
+}
 
 .nav {
   margin-right: 15%;
