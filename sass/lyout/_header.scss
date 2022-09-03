@@ -4,6 +4,10 @@
   // border-bottom: 1px solid #a5a3a3;
 }
 
+.gallery-header {
+  position: static;
+}
+
 .header-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -22,6 +26,13 @@
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
+  transition-property: text-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  &:hover {
+    text-shadow: 1px 1px 2px #000000, 0 0 1em #bbbcbe, 0 0 0.2em #bbbcbe;
+  }
 }
 
 .nav {
@@ -42,6 +53,10 @@
   color: var(--primary-header-color);
   border: 1px solid var(--primary-header-color);
   border-radius: 10px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
   &:hover {
     color: var(--invers-header-color);
     background-color: var(--primary-header-color);
