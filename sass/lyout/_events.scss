@@ -28,6 +28,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .events-list__img {
+    border: 1px solid var(--primary-header-color);
+  }
+}
+
 .events-list__wrapper {
   width: 44vw;
   @media screen and (max-width: 767px) {
